@@ -71,7 +71,7 @@ U 1 1 5CB9518C
 P 1500 2200
 F 0 "D2" V 1500 2300 60  0000 L CNN
 F 1 "ESD Diode" V 1650 2300 60  0000 L CNN
-F 2 "digikey-footprints:0603" H 1700 2400 60  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1700 2400 60  0001 L CNN
 F 3 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1700 2500 60  0001 L CNN
 F 4 "F2594CT-ND" H 1700 2600 60  0001 L CNN "Digi-Key_PN"
 F 5 "PGB1010603MR" H 1700 2700 60  0001 L CNN "MPN"
@@ -478,7 +478,7 @@ U 1 1 5D7C359A
 P 1200 6350
 F 0 "D1" V 1200 6050 60  0000 L CNN
 F 1 "ESD" V 1300 6000 60  0000 L CNN
-F 2 "digikey-footprints:0603" H 1400 6550 60  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1400 6550 60  0001 L CNN
 F 3 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1400 6650 60  0001 L CNN
 F 4 "F2594CT-ND" H 1400 6750 60  0001 L CNN "Digi-Key_PN"
 F 5 "PGB1010603MR" H 1400 6850 60  0001 L CNN "MPN"
@@ -1542,7 +1542,7 @@ U 1 1 5D7B9A23
 P 1500 4350
 F 0 "D3" V 1500 4450 60  0000 L CNN
 F 1 "ESD Diode" V 1650 4450 60  0000 L CNN
-F 2 "digikey-footprints:0603" H 1700 4550 60  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1700 4550 60  0001 L CNN
 F 3 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" H 1700 4650 60  0001 L CNN
 F 4 "F2594CT-ND" H 1700 4750 60  0001 L CNN "Digi-Key_PN"
 F 5 "PGB1010603MR" H 1700 4850 60  0001 L CNN "MPN"
