@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ETC BSPD V2"
-Date ""
-Rev "1"
+Date "2020-01-07"
+Rev "2"
 Comp "UBCO Motorsports"
 Comment1 "Drawn By: L. Vozenilek"
 Comment2 ""
@@ -339,28 +339,6 @@ NoConn ~ 1900 6250
 Text Notes 1500 5400 0    50   ~ 0
 I/O
 $Comp
-L dk_PMIC-Voltage-Regulators-Linear:NCP1117ST50T3G U3
-U 1 1 5D7842B2
-P 8950 5850
-F 0 "U3" H 9000 6137 60  0000 C CNN
-F 1 "LM1117MPX-5.0" H 9000 6031 60  0000 C CNN
-F 2 "digikey-footprints:SOT-223" H 9150 6050 60  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF" H 9150 6150 60  0001 L CNN
-F 4 "NCP1117ST50T3GOSCT-ND" H 9150 6250 60  0001 L CNN "Digi-Key_PN"
-F 5 "NCP1117ST50T3G" H 9150 6350 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 9150 6450 60  0001 L CNN "Category"
-F 7 "PMIC - Voltage Regulators - Linear" H 9150 6550 60  0001 L CNN "Family"
-F 8 "http://www.onsemi.com/pub/Collateral/NCP1117-D.PDF" H 9150 6650 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/NCP1117ST50T3G/NCP1117ST50T3GOSCT-ND/1967217" H 9150 6750 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC REG LINEAR 5V 1A SOT223" H 9150 6850 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 9150 6950 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9150 7050 60  0001 L CNN "Status"
-	1    8950 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 5850 9350 5900
-$Comp
 L Device:CP C1
 U 1 1 5D786B85
 P 8200 6050
@@ -374,12 +352,12 @@ $EndComp
 $Comp
 L Device:CP C6
 U 1 1 5D786CAF
-P 9900 6050
-F 0 "C6" H 10018 6096 50  0000 L CNN
-F 1 "10u" H 10018 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 9938 5900 50  0001 C CNN
-F 3 "" H 9900 6050 50  0001 C CNN
-	1    9900 6050
+P 9800 6000
+F 0 "C6" H 9918 6046 50  0000 L CNN
+F 1 "10u" H 9918 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 9838 5850 50  0001 C CNN
+F 3 "" H 9800 6000 50  0001 C CNN
+	1    9800 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -406,7 +384,7 @@ Connection ~ 8450 5850
 Wire Wire Line
 	8450 5850 8200 5850
 Wire Wire Line
-	8950 6250 8450 6250
+	8950 6250 8850 6250
 Wire Wire Line
 	8200 6200 8200 6250
 Wire Wire Line
@@ -428,46 +406,29 @@ $EndComp
 $Comp
 L power:+5V #PWR026
 U 1 1 5D7A175D
-P 9900 5650
-F 0 "#PWR026" H 9900 5500 50  0001 C CNN
-F 1 "+5V" H 9915 5823 50  0000 C CNN
-F 2 "" H 9900 5650 50  0001 C CNN
-F 3 "" H 9900 5650 50  0001 C CNN
-	1    9900 5650
+P 9800 5650
+F 0 "#PWR026" H 9800 5500 50  0001 C CNN
+F 1 "+5V" H 9815 5823 50  0000 C CNN
+F 2 "" H 9800 5650 50  0001 C CNN
+F 3 "" H 9800 5650 50  0001 C CNN
+	1    9800 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5D7A3E37
-P 9550 6050
-F 0 "C5" H 9700 6100 50  0000 C CNN
-F 1 "10n" H 9700 6000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9588 5900 50  0001 C CNN
-F 3 "" H 9550 6050 50  0001 C CNN
-	1    9550 6050
+P 9450 6000
+F 0 "C5" H 9600 6050 50  0000 C CNN
+F 1 "10n" H 9600 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9488 5850 50  0001 C CNN
+F 3 "" H 9450 6000 50  0001 C CNN
+	1    9450 6000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9350 5900 9550 5900
-Connection ~ 9350 5900
+	9250 5850 9450 5850
 Wire Wire Line
-	9350 5900 9350 5950
-Wire Wire Line
-	9550 5900 9900 5900
-Connection ~ 9550 5900
-Wire Wire Line
-	8950 6250 9550 6250
-Wire Wire Line
-	9900 6250 9900 6200
-Connection ~ 8950 6250
-Wire Wire Line
-	9550 6200 9550 6250
-Connection ~ 9550 6250
-Wire Wire Line
-	9550 6250 9900 6250
-Wire Wire Line
-	9900 5900 9900 5650
-Connection ~ 9900 5900
+	9450 5850 9800 5850
 Wire Notes Line
 	10200 5300 7900 5300
 Text Notes 8900 5300 0    50   ~ 0
@@ -668,7 +629,7 @@ F 3 "" H 9800 2750 50  0001 C CNN
 	1    9800 2750
 	1    0    0    -1  
 $EndComp
-Text Notes 7150 1500 0    50   ~ 0
+Text Notes 6950 1700 0    50   ~ 0
 Shutdown Delay (1s)
 Text Notes 7150 2600 0    50   ~ 0
 Startup Delay (1s)\n
@@ -1200,7 +1161,7 @@ U 1 1 5D91CBD7
 P 1700 6900
 F 0 "J2" H 1850 7100 50  0000 C CNN
 F 1 "Override" H 1850 7000 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 1700 6900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1700 6900 50  0001 C CNN
 F 3 "~" H 1700 6900 50  0001 C CNN
 	1    1700 6900
 	1    0    0    -1  
@@ -1263,7 +1224,7 @@ F 12 "Active" H 5850 5400 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 Text GLabel 6250 4600 2    50   Input ~ 0
-ERR_OUT
+ON_OUT
 Wire Wire Line
 	5650 4400 5650 4600
 Wire Wire Line
@@ -1271,7 +1232,7 @@ Wire Wire Line
 Text GLabel 6250 4300 2    50   Input ~ 0
 RELAY
 Text GLabel 1900 5950 2    50   Input ~ 0
-ERR_OUT
+ON_OUT
 Wire Wire Line
 	5950 4300 6250 4300
 Wire Notes Line
@@ -1673,26 +1634,6 @@ Wire Notes Line
 Text GLabel 8500 4150 0    50   Input ~ 0
 RELAY
 $Comp
-L dk_Diodes-Rectifiers-Single:MBR0520LT1G D7
-U 1 1 5D840464
-P 8600 4550
-F 0 "D7" V 8650 4850 60  0000 R CNN
-F 1 "Flyback" V 8550 5000 60  0000 R CNN
-F 2 "digikey-footprints:SOD-123" H 8800 4750 60  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/MBR0520LT1-D.PDF" H 8800 4850 60  0001 L CNN
-F 4 "MBR0520LT1GOSCT-ND" H 8800 4950 60  0001 L CNN "Digi-Key_PN"
-F 5 "MBR0520LT1G" H 8800 5050 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 8800 5150 60  0001 L CNN "Category"
-F 7 "Diodes - Rectifiers - Single" H 8800 5250 60  0001 L CNN "Family"
-F 8 "http://www.onsemi.com/pub/Collateral/MBR0520LT1-D.PDF" H 8800 5350 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/MBR0520LT1G/MBR0520LT1GOSCT-ND/917965" H 8800 5450 60  0001 L CNN "DK_Detail_Page"
-F 10 "DIODE SCHOTTKY 20V 500MA SOD123" H 8800 5550 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 8800 5650 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8800 5750 60  0001 L CNN "Status"
-	1    8600 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR039
 U 1 1 5D81F17F
 P 8900 4700
@@ -1790,8 +1731,6 @@ Wire Wire Line
 Connection ~ 10300 2900
 Wire Wire Line
 	10300 2900 10800 2900
-Wire Notes Line
-	9450 3350 9450 1500
 $Comp
 L power:+5V #PWR046
 U 1 1 5DB5705E
@@ -1913,11 +1852,7 @@ Error High
 Text Notes 5850 1400 0    50   ~ 0
 Error High
 Wire Notes Line
-	6850 1500 11100 1500
-Wire Notes Line
 	6850 3350 11100 3350
-Wire Notes Line
-	8150 1500 8150 3350
 $Comp
 L Lukas_Library:NC7SZ00M5X U4
 U 1 1 5DA02D1B
@@ -1954,23 +1889,10 @@ F 3 "" H 8800 2650 50  0001 C CNN
 	1    8800 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR042
-U 1 1 5D894E2E
-P 8800 1900
-F 0 "#PWR042" H 8800 1750 50  0001 C CNN
-F 1 "+5V" H 8815 2073 50  0000 C CNN
-F 2 "" H 8800 1900 50  0001 C CNN
-F 3 "" H 8800 1900 50  0001 C CNN
-	1    8800 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9100 2350 9500 2350
 Wire Wire Line
 	8350 2450 8500 2450
-Wire Wire Line
-	8350 2250 8500 2250
 Wire Wire Line
 	8950 2000 8800 2000
 Wire Wire Line
@@ -1978,7 +1900,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 1900 8800 2000
 Connection ~ 8800 2000
-Text Notes 8750 1500 0    50   ~ 0
+Text Notes 8750 1700 0    50   ~ 0
 AND\n
 $Comp
 L power:+5V #PWR055
@@ -1999,14 +1921,7 @@ Connection ~ 7750 1850
 Wire Notes Line
 	6850 2600 8150 2600
 Wire Wire Line
-	7750 1850 7800 1850
-Wire Wire Line
 	6700 1850 6900 1850
-Wire Wire Line
-	8350 2250 8350 1850
-Wire Wire Line
-	8100 1850 8350 1850
-Connection ~ 8350 1850
 Wire Wire Line
 	7550 2800 8350 2800
 Wire Wire Line
@@ -2016,8 +1931,6 @@ Wire Wire Line
 	6700 1850 6700 2600
 Wire Wire Line
 	6700 2600 6050 2600
-Wire Notes Line
-	6850 1500 6850 3350
 Wire Notes Line
 	6550 2000 4850 2000
 Wire Notes Line
@@ -2030,35 +1943,13 @@ Connection ~ 8350 2800
 $Comp
 L Connector:TestPoint TP6
 U 1 1 5DC8DC7D
-P 8350 1850
-F 0 "TP6" V 8400 2000 50  0000 C CNN
-F 1 "Shutdown TP" V 8450 2000 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 8550 1850 50  0001 C CNN
-F 3 "" H 8550 1850 50  0001 C CNN
-	1    8350 1850
+P 8500 1150
+F 0 "TP6" V 8500 1400 50  0000 C CNN
+F 1 "Shutdown TP" V 8600 1450 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 8700 1150 50  0001 C CNN
+F 3 "" H 8700 1150 50  0001 C CNN
+	1    8500 1150
 	0    1    1    0   
-$EndComp
-$Comp
-L Diode:1N4148W D8
-U 1 1 5DD0D385
-P 7950 1850
-F 0 "D8" H 7950 1633 50  0000 C CNN
-F 1 "1N4148W" H 7950 1724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 7950 1675 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7950 1850 50  0001 C CNN
-	1    7950 1850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4148W D9
-U 1 1 5DD0DFB2
-P 8350 1400
-F 0 "D9" V 8650 1450 50  0000 R CNN
-F 1 "1N4148W" V 8550 1500 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 8350 1225 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8350 1400 50  0001 C CNN
-	1    8350 1400
-	0    -1   -1   0   
 $EndComp
 $Comp
 L dk_Logic-Gates-and-Inverters:SN74LVC1G08DBVR U5
@@ -2080,8 +1971,174 @@ F 12 "Active" H 9000 3550 60  0001 L CNN "Status"
 	1    8800 2350
 	1    0    0    -1  
 $EndComp
+Text GLabel 9050 4250 2    50   Input ~ 0
+Relay_Supply
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5DF8112E
+P 9850 3200
+F 0 "TP8" V 9900 3350 50  0000 C CNN
+F 1 "Latch TP" V 10000 3350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile" H 10050 3200 50  0001 C CNN
+F 3 "" H 10050 3200 50  0001 C CNN
+	1    9850 3200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9850 3200 2    50   Input ~ 0
+RELAY
+$Comp
+L Diode:BAT42W-V D7
+U 1 1 5DFB061B
+P 8600 4550
+F 0 "D7" V 8554 4629 50  0000 L CNN
+F 1 "Flyback" V 8645 4629 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 4375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 8600 4550 50  0001 C CNN
+	1    8600 4550
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	5950 1250 8350 1250
+	8600 4350 8600 4400
 Wire Wire Line
-	8350 1850 8350 1550
+	8600 4750 8600 4700
+Wire Wire Line
+	8900 4250 9050 4250
+Connection ~ 8900 4250
+Wire Wire Line
+	7750 1850 7850 1850
+$Comp
+L power:GND #PWR0101
+U 1 1 5E1114BC
+P 8150 1450
+F 0 "#PWR0101" H 8150 1200 50  0001 C CNN
+F 1 "GND" H 8150 1300 50  0000 C CNN
+F 2 "" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E11FE3F
+P 8600 850
+F 0 "#PWR0102" H 8600 600 50  0001 C CNN
+F 1 "GND" H 8605 677 50  0000 C CNN
+F 2 "" H 8600 850 50  0001 C CNN
+F 3 "" H 8600 850 50  0001 C CNN
+	1    8600 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5E11FE49
+P 8450 850
+F 0 "C13" V 8198 850 50  0000 C CNN
+F 1 "100n" V 8289 850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8488 700 50  0001 C CNN
+F 3 "" H 8450 850 50  0001 C CNN
+	1    8450 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E11FE53
+P 8150 750
+F 0 "#PWR0103" H 8150 600 50  0001 C CNN
+F 1 "+5V" H 8165 923 50  0000 C CNN
+F 2 "" H 8150 750 50  0001 C CNN
+F 3 "" H 8150 750 50  0001 C CNN
+	1    8150 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 850  8150 850 
+Wire Wire Line
+	8150 750  8150 850 
+Wire Notes Line
+	9450 1500 11100 1500
+Wire Notes Line
+	6850 1700 9450 1700
+Wire Notes Line
+	6850 3350 6850 1700
+Wire Notes Line
+	8150 1700 8150 3350
+Wire Wire Line
+	5950 1250 7400 1250
+Wire Wire Line
+	7400 1250 7400 1050
+Wire Wire Line
+	7400 1050 7850 1050
+Wire Wire Line
+	7850 1250 7850 1850
+Wire Wire Line
+	8500 2250 8500 1150
+Wire Wire Line
+	8500 1150 8450 1150
+Connection ~ 8500 1150
+Wire Notes Line
+	7750 1700 7750 500 
+Wire Notes Line
+	7750 500  9450 500 
+Wire Notes Line
+	9450 500  9450 3350
+Text Notes 8650 600  0    50   ~ 0
+OR
+$Comp
+L power:+5V #PWR042
+U 1 1 5D894E2E
+P 8800 1900
+F 0 "#PWR042" H 8800 1750 50  0001 C CNN
+F 1 "+5V" H 8800 2050 50  0000 C CNN
+F 2 "" H 8800 1900 50  0001 C CNN
+F 3 "" H 8800 1900 50  0001 C CNN
+	1    8800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lukas_Library:NC7S32M5X U7
+U 1 1 5E1D8A02
+P 8200 1100
+F 0 "U7" H 7900 1350 50  0000 L CNN
+F 1 "OR GATE" H 7800 1450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 8200 1100 50  0001 C CNN
+F 3 "" H 8200 1100 50  0001 C CNN
+	1    8200 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 850 
+$Comp
+L Lukas_Library:NCV7805BDTRKG U3
+U 1 1 5E254AFC
+P 8950 5850
+F 0 "U3" H 8950 6092 50  0000 C CNN
+F 1 "NCV7805BDTRKG" H 8950 6001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 8950 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 8950 5850 50  0001 C CNN
+	1    8950 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9450 5850
+Wire Wire Line
+	9800 5650 9800 5850
+Connection ~ 9800 5850
+Wire Wire Line
+	8850 6150 8850 6250
+Connection ~ 8850 6250
+Wire Wire Line
+	8850 6250 8450 6250
+Wire Wire Line
+	8950 6250 9050 6250
+Wire Wire Line
+	9450 6250 9450 6150
+Connection ~ 8950 6250
+Wire Wire Line
+	9450 6250 9800 6250
+Wire Wire Line
+	9800 6250 9800 6150
+Connection ~ 9450 6250
+Wire Wire Line
+	9050 6150 9050 6250
+Connection ~ 9050 6250
+Wire Wire Line
+	9050 6250 9450 6250
 $EndSCHEMATC
