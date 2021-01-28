@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BSPD_2019-rescue:LM393ADR-dk_Linear-Comparators-BSPD_2019-rescue U1
-U 1 1 5CB93F6C
-P 3300 2000
-F 0 "U1" H 3400 1650 50  0000 C CNN
-F 1 "LM393ADR" H 3400 1750 50  0000 C CNN
-F 2 "digikey-footprints:SOIC-8_W3.9mm" H 3300 2000 50  0001 C CNN
-F 3 "" H 3300 2000 50  0001 C CNN
-	1    3300 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R3
 U 1 1 5CB94412
 P 1350 1850
@@ -1559,17 +1548,6 @@ F 3 "" H 1350 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L BSPD_2019-rescue:LM393ADR-dk_Linear-Comparators-BSPD_2019-rescue U2
-U 1 1 5D7B99FE
-P 3300 4150
-F 0 "U2" H 3400 3800 50  0000 C CNN
-F 1 "LM393ADR" H 3400 3900 50  0000 C CNN
-F 2 "digikey-footprints:SOIC-8_W3.9mm" H 3300 4150 50  0001 C CNN
-F 3 "" H 3300 4150 50  0001 C CNN
-	1    3300 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR056
 U 1 1 5D911E2C
 P 8900 3800
@@ -2253,4 +2231,26 @@ Wire Notes Line
 	10300 4550 11150 4550
 Text Notes 10500 3500 0    50   ~ 0
 Mechanical
+$Comp
+L Lukas_Library:LM393ADR U?
+U 1 1 60167EA7
+P 3300 2000
+F 0 "U?" H 3275 2665 50  0000 C CNN
+F 1 "LM393ADR" H 3275 2574 50  0000 C CNN
+F 2 "" H 3300 2000 50  0001 C CNN
+F 3 "" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Lukas_Library:LM393ADR U?
+U 1 1 6016873B
+P 3300 4150
+F 0 "U?" H 3275 4815 50  0000 C CNN
+F 1 "LM393ADR" H 3275 4724 50  0000 C CNN
+F 2 "" H 3300 4150 50  0001 C CNN
+F 3 "" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
